@@ -1,0 +1,235 @@
+1) Arithmatic Operator
+package pranjali;
+
+public class program2 {
+public static void main(String[] args) {
+		 {
+		     {
+		        int a = 10, b = 5;
+            int sum = a + b;
+		        int difference = a - b;
+		        int product = a * b;
+		        int quotient = a / b;
+		        int remainder = a % b;
+
+            System.out.println("Sum: " + sum);
+		        System.out.println("Difference: " + difference);
+		        System.out.println("Product: " + product);
+		        System.out.println("Quotient: " + quotient);
+		        System.out.println("Remainder: " + remainder);
+		    }
+		}
+	}
+}
+
+2) Relational Operator
+package java3;
+public class relationaloperator {
+public static void main(String[] args) {
+		
+      int a = 10;
+			int b = 20;
+
+      System.out.println(a == b);
+			System.out.println(a != b);
+			System.out.println(a > b);
+			System.out.println(a < b);
+			System.out.println(a >= b);
+			System.out.println(a <= b);
+
+			System.out.println(new Data1() == new Data1());
+			System.out.println(new Data1() != new Data1());
+
+		}
+
+	}
+
+	class Data1 {
+	}
+
+3) Assignment Operator
+package java4;
+public class assignmentoperator {
+	public static void main(String args[]) {
+	
+		      int a = 10;
+		      int b = 20;
+		      int c = 0;
+		      int d = 10;
+		      int e = 15;
+		      int f = 10;
+		      int g = 0;
+
+		      c = a + b;
+		      System.out.println("c = a + b = " + c );
+
+		      c += a ;
+		      System.out.println("c += a  = " + c );
+
+		      c -= a ;
+		      System.out.println("c -= a = " + c );
+
+		      c *= a ;
+		      System.out.println("c *= a = " + c );
+		      c /= a ;
+		      System.out.println("c /= a = " + c );
+
+		      c = 15;
+		      c %= a ;
+		      System.out.println("c %= a  = " + c );
+
+		      c = 15;
+		      c &= a ;
+		      System.out.println("c &= a  = " + c );
+			  
+		      c = 15;	  
+		      c ^= a ;
+		      System.out.println("c ^= a   = " + c );
+
+		      c = 15;
+		      c |= a ;
+		      System.out.println("c |= a   = " + c );
+		      
+		      c <<= 2 ;
+		      System.out.println("c <<= 2 = " + c );
+
+		      c = 15;
+		      c >>= 2 ;
+		      System.out.println("c >>= 2 = " + c );
+		   }
+
+		   }
+
+4) Bitwise Operator
+package java5;
+
+public class bitwiseope {
+public static void main(String[] args) {
+		
+		    {
+		        int a = 5;
+		        int b = 7;
+
+		        System.out.println("a&b = " + (a & b));
+
+		        System.out.println("a|b = " + (a | b));
+
+		        System.out.println("a^b = " + (a ^ b));
+
+		        System.out.println("~a = " + ~a);
+	            a &= b;
+	          System.out.println("a= " + a);
+		    }
+		}
+
+	}
+
+5) Unary Operator
+package java6;
+public class unaryoperator {
+public static void main(String[] args) {
+		
+	        int originalNumber = 8;
+	        int positiveValue = +originalNumber;
+	        int negativeValue = -originalNumber;
+
+	        System.out.println("Original Number: " + originalNumber);
+	        System.out.println("Unary Plus: " + positiveValue);
+	        System.out.println("Unary Minus: " + negativeValue);
+
+	        int counter = 5;
+	        counter++; 
+	        System.out.println("After Increment: " + counter);
+
+	        counter--;
+	        System.out.println("After Decrement: " + counter);
+
+	        boolean isJavaFun = true;
+	        boolean isJavaNotFun = !isJavaFun;
+	        System.out.println("Is Java fun? " + isJavaFun);
+	        System.out.println("Is Java not fun? " + isJavaNotFun);
+	    }
+	} 
+
+6) Logical Operator
+package java7;
+public class logicaloperator {
+public static void main(String[] args) {
+		 boolean a = true;
+	        boolean b = false;
+
+	        System.out.println("a: " + a);
+	        System.out.println("b: " + b);
+	        System.out.println("a && b: " + (a && b));
+	        System.out.println("a || b: " + (a || b));
+	        System.out.println("!a: " + !a);
+	        System.out.println("!b: " + !b);
+	    }
+	
+}
+
+7) Shift Operator
+package java8;
+
+public class shiftoperator {
+public static void main(String[] args) {
+		 int x = 5 ;  
+	        int y = x << 4 ;  
+	        int a = 80 ;  
+		       int b = a >> 4 ; 
+		       int c = 40 ;  
+		       int d = -40 ;  
+		       int ans = x >> 5 ;  
+		       int ans2 = y >> 5 ;
+	        
+	        System.out.println( " The value is: " +y) ;  
+	        System.out.print( " The right shifted value is : " +y) ;  
+	        System.out.println( " The right sifted value of 40 by 5 is :  "+ans);
+	       
+	}
+}
+
+8) Ternary Operator
+package java9;
+public class ternaryoperator {
+public static void main(String[] args) {
+		System.out.println(getMinValue(4,10));
+        
+        System.out.println(getAbsoluteValue(-10));
+         
+        System.out.println(invertBoolean(true));
+         
+        String str = "Australia";
+        String data = str.contains("A") ? "Str contains 'A'" : "Str doesn't contains 'A'";
+        System.out.println(data);
+        
+        int i = 10;
+        switch (i){
+        case 5: 
+        	System.out.println("i=5");
+        	break;
+        case 10:
+        	System.out.println("i=10");
+        	break;
+        default:
+        	System.out.println("i is not equal to 5 or 10");
+        }
+        
+        System.out.println((i==5) ? "i=5":((i==10) ? "i=10":"i is not equal to 5 or 10"));
+    }
+ 
+    private static boolean invertBoolean(boolean b) {
+        return b ? false:true;
+    }
+ 
+    private static int getAbsoluteValue(int i) {
+        return i<0 ? -i:i;
+    }
+ 
+    private static int getMinValue(int i, int j) {
+        return (i<j) ? i : j;
+    }
+ 
+}
+	
+		
