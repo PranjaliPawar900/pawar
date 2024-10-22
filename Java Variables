@@ -1,0 +1,78 @@
+1)  Local Variable
+package variable;
+
+public class localvariable {
+public static void main(String[] args) {
+		int x = 10;
+        String message = "Hello, world!";
+
+        System.out.println("x = " + x);
+        System.out.println("message = " + message);
+        if (x > 5) {
+            String result = "x is greater than 5";
+            System.out.println(result);
+        }
+        for (int i = 0; i < 3; i++) {
+            String loopMessage
+                = "Iteration "
+                  + i; 
+            System.out.println(loopMessage);
+        }
+
+        }
+}
+
+2)  Instance Variable
+package variable2;
+public class Test {
+
+	public static String classVariable = "I am associated with the class";
+	    public String instanceVariable = "I am associated with the instance";
+	    
+	    public void setText(String string){
+	        this.instanceVariable = string;
+	    }
+	    
+	    public static void setClassText(String string){
+	        classVariable = string;
+	    }
+	     public static void main(String[] args) {
+	        Test test1 = new Test();
+	        Test test2 = new Test();
+	        test1.setText("Changed");
+	        System.out.println(test1.instanceVariable); 
+	        
+	        System.out.println(test2.instanceVariable);
+	        
+	        Test.setClassText("Changed class text");
+	        System.out.println(Test.classVariable); 
+	        
+	        
+	        System.out.println(test1.classVariable);
+	        System.out.println(test2.classVariable); 
+	    }
+	}
+
+3)  Static Variable
+package variable3;
+
+public class Student {
+
+	int rollno; 
+	   String name;  
+	   static String college ="SSBT";
+	   Student(int r, String n){  
+
+	   rollno = r;  
+	   name = n;  
+	   }  
+	     
+	 void display (){System.out.println(rollno+" "+name+" "+college);}  
+	 public static void main(String args[]){  
+	 Student s1 = new Student(11,"Pranjali");  
+	 Student s2 = new Student(22,"Tushar");  
+	 
+	 s1.display();  
+	 s2.display();  
+	 }  
+	}  
