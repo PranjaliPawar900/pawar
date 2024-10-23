@@ -1,0 +1,45 @@
+1)  Create an array of 10 animals.
+
+package program;
+
+public class AnimalArray {
+public static void main(String[] args) {
+		String[] animals = new String[10];
+
+        animals[0] = "Lion";
+        animals[1] = "Tiger";
+        animals[2] = "Elephant";
+        animals[3] = "Giraffe";
+        animals[4] = "Zebra";
+        animals[5] = "Kangaroo";
+        animals[6] = "Panda";
+        animals[7] = "Penguin";
+        animals[8] = "Dolphin";
+        animals[9] = "Wolf";
+
+        for (String animal : animals) {
+            System.out.println(animal);
+        }
+    }
+
+}
+
+2) create a number array and display largest elements in an array.
+
+package program2;
+public class LargestElement {
+
+	public static void main(String[] args) {
+		 int[] numbers = {34, 67, 23, 89, 2, 45, 90};
+     
+     int largest = numbers[0]; 
+
+	       for (int i = 1; i < numbers.length; i++) {
+	            if (numbers[i] > largest) {
+	                largest = numbers[i]; 
+	            }
+	        }
+              System.out.println("The largest element in the array is: " + largest);
+	    }
+	}
+
