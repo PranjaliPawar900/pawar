@@ -1,0 +1,23 @@
+package demo;
+
+public class StringExample {
+
+	public static void main(String[] args) {
+		
+		String str = "Hello,World,Java";
+
+        String[] splitArray = str.split(",");
+
+        System.out.println("Split Array:");
+        for (String s : splitArray) {
+            System.out.println(s);
+        }
+
+        char[] charArray = str.toCharArray();
+        System.out.println("\nCharacter Array:");
+        for (char c : charArray) {
+            System.out.print(c + " ");
+        }
+    }
+
+	}
